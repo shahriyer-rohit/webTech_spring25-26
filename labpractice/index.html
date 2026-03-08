@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main container for the form -->
+    <div class="form-container">
+        <!-- Form heading -->
+        <h1>Contact us</h1>
+        
+        <!-- Contact form using table structure -->
+        <form id="contactForm">
+            <table>
+                <!-- Row 1: First Name and Last Name side by side -->
+                <tr>
+                    <td>
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" placeholder="First Name">
+                    </td>
+                    <td>
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+                    </td>
+                </tr>
+                
+                <!-- Row 2: Email and Phone Number side by side -->
+                <tr>
+                    <td>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email">
+                    </td>
+                    <td>
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+                    </td>
+                </tr>
+                
+                <!-- Row 3: Message textarea (full width) -->
+                <tr>
+                    <td colspan="2">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Please enter query..."></textarea>
+                    </td>
+                </tr>
+                
+                <!-- Row 4: Submit button (centered) -->
+                <tr>
+                    <td colspan="2" class="submit-row">
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    
+     
+    <script src="script.js"></script>
+</body>
+</html>
